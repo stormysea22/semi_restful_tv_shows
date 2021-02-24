@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <a href="/shows">Go Back</a>
+        <h1>Tv Show {{show.id}}</h1>
+        <p>Title: {{show.title}}</p>
+        <p>Network: {{show.network}}</p>
+        <p>Release Date: {{show.release_date}}</p>
+        <p>Description: {{show.description}}</p>
+    </main>
+    <section>
+        <p>Last Updated: {{show.updated_at}}</p>
+        <a href="/shows/{{show.id}}/edit">Edit</a> | <a href="/shows/{{show.id}}/delete">Delete</a>
+    </section>
+</body>
+</html>
